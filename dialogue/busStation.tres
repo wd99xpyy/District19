@@ -1,0 +1,156 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogue_manager/dialogue_resource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+resource_version = 4
+syntax_version = 2
+raw_text = "~ e1_start
+Hi, nice to meet you
+- Hi => e1_enter
+
+~ e1_enter
+Could you please help me to get some mushrooms from forest?
+- That too far? => e2_enter
+
+~ e2_enter
+I can buy bus ticket for you! And pay for the mushrooms.
+- Why not by it in market ? => e3_enter
+
+~ e3_enter
+Aggie: I want something fresher
+- All right! => END
+
+~ finish
+See you next time [next=auto]
+=> END
+
+~ abort
+=> END"
+errors = [  ]
+titles = {
+"abort": "21",
+"e1_enter": "5",
+"e1_start": "1",
+"e2_enter": "9",
+"e3_enter": "13",
+"finish": "17"
+}
+lines = {
+"0": {
+"next_id": "1",
+"text": "e1_start",
+"type": "title"
+},
+"1": {
+"character": "",
+"next_id": "2",
+"replacements": [  ],
+"text": "Hi, nice to meet you",
+"translation_key": "Hi, nice to meet you",
+"type": "dialogue"
+},
+"10": {
+"next_id": "13",
+"next_id_after": "end!",
+"replacements": [  ],
+"responses": PoolStringArray( "10" ),
+"text": "Why not by it in market ?",
+"translation_key": "Why not by it in market ?",
+"type": "response"
+},
+"12": {
+"next_id": "13",
+"text": "e3_enter",
+"type": "title"
+},
+"13": {
+"character": "Aggie",
+"character_replacements": [  ],
+"next_id": "14",
+"replacements": [  ],
+"text": "I want something fresher",
+"translation_key": "I want something fresher",
+"type": "dialogue"
+},
+"14": {
+"next_id": "end",
+"next_id_after": "end!",
+"replacements": [  ],
+"responses": PoolStringArray( "14" ),
+"text": "All right!",
+"translation_key": "All right!",
+"type": "response"
+},
+"16": {
+"next_id": "17",
+"text": "finish",
+"type": "title"
+},
+"17": {
+"character": "",
+"next_id": "18",
+"replacements": [  ],
+"text": "See you next time [next=auto]",
+"translation_key": "See you next time [next=auto]",
+"type": "dialogue"
+},
+"18": {
+"next_id": "end",
+"type": "goto"
+},
+"2": {
+"next_id": "5",
+"next_id_after": "end!",
+"replacements": [  ],
+"responses": PoolStringArray( "2" ),
+"text": "Hi",
+"translation_key": "Hi",
+"type": "response"
+},
+"20": {
+"next_id": "21",
+"text": "abort",
+"type": "title"
+},
+"21": {
+"next_id": "end",
+"type": "goto"
+},
+"4": {
+"next_id": "5",
+"text": "e1_enter",
+"type": "title"
+},
+"5": {
+"character": "",
+"next_id": "6",
+"replacements": [  ],
+"text": "Could you please help me to get some mushrooms from forest?",
+"translation_key": "Could you please help me to get some mushrooms from forest?",
+"type": "dialogue"
+},
+"6": {
+"next_id": "9",
+"next_id_after": "end!",
+"replacements": [  ],
+"responses": PoolStringArray( "6" ),
+"text": "That too far?",
+"translation_key": "That too far?",
+"type": "response"
+},
+"8": {
+"next_id": "9",
+"text": "e2_enter",
+"type": "title"
+},
+"9": {
+"character": "",
+"next_id": "10",
+"replacements": [  ],
+"text": "I can buy bus ticket for you! And pay for the mushrooms.",
+"translation_key": "I can buy bus ticket for you! And pay for the mushrooms.",
+"type": "dialogue"
+}
+}

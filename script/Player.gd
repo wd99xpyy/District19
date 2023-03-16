@@ -1,19 +1,34 @@
 extends KinematicBody2D
 
-onready var anim = $PlayerSprites
+export(SpriteFrames) var playerSprite = null
 export (int) var speed = 200
+export (int) var PlayerN
+var movement= false
 var velocity = Vector2()
 var currentdirection = ""
 
 func _ready():
+	$PlayerSprites.frames = playerSprite
 	$PlayerSprites.animation = "idle"
-	
+
 func _physics_process(_delta):
-	get_input()
-	velocity = move_and_slide(velocity)
+	if(movement):
+		get_input()
+		velocity = move_and_slide(velocity)
+
+func active():
+	movement= true
+	$Camera2D.current = true
+	
+func disactive():
+	movement= false
+	$Camera2D.current = false
 
 func get_input():
 	velocity = Vector2()
+	if Input.is_action_pressed("switchScene"):
+		get_tree().change_scene("res://scene/Forest.tscn")
+		
 	if Input.is_action_pressed("right"):
 		velocity.x += 1
 		currentdirection = "Right"
@@ -37,3 +52,4 @@ func get_input():
 	else:
 		$PlayerSprites.animation = "walk"+currentdirection
 	velocity = velocity.normalized() * speed
+

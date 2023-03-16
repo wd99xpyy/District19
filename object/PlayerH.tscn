@@ -1,0 +1,163 @@
+[gd_scene load_steps=81 format=2]
+
+[ext_resource path="res://import/Player/Idle/Idle_004.png" type="Texture" id=1]
+[ext_resource path="res://import/Player/Idle/Idle_000.png" type="Texture" id=2]
+[ext_resource path="res://import/Player/Idle/Idle_003.png" type="Texture" id=3]
+[ext_resource path="res://import/Player/Idle/Idle_001.png" type="Texture" id=4]
+[ext_resource path="res://import/Player/Idle/Idle_006.png" type="Texture" id=5]
+[ext_resource path="res://import/Player/Idle/Idle_005.png" type="Texture" id=6]
+[ext_resource path="res://import/Player/Idle/Idle_007.png" type="Texture" id=7]
+[ext_resource path="res://import/Player/Idle/Idle_002.png" type="Texture" id=8]
+[ext_resource path="res://import/Player/Run/Run_003.png" type="Texture" id=9]
+[ext_resource path="res://import/Player/Run/Run_000.png" type="Texture" id=10]
+[ext_resource path="res://import/Player/Run/Run_001.png" type="Texture" id=11]
+[ext_resource path="res://import/Player/Run/Run_004.png" type="Texture" id=12]
+[ext_resource path="res://import/Player/Run/Run_002.png" type="Texture" id=13]
+[ext_resource path="res://import/Player/Run/Run_005.png" type="Texture" id=14]
+[ext_resource path="res://import/Player/Die/Die_002.png" type="Texture" id=15]
+[ext_resource path="res://import/Player/Die/Die_003.png" type="Texture" id=16]
+[ext_resource path="res://import/Player/Walk/Walk_000.png" type="Texture" id=17]
+[ext_resource path="res://import/Player/Walk/Walk_004.png" type="Texture" id=18]
+[ext_resource path="res://import/Player/Walk/Walk_001.png" type="Texture" id=19]
+[ext_resource path="res://import/Player/Walk/Walk_003.png" type="Texture" id=20]
+[ext_resource path="res://import/Player/Walk/Walk_002.png" type="Texture" id=21]
+[ext_resource path="res://import/Player/Walk/Walk_005.png" type="Texture" id=22]
+[ext_resource path="res://import/Player/Walk/Walk_006.png" type="Texture" id=23]
+[ext_resource path="res://import/Player/Walk/Walk_012.png" type="Texture" id=24]
+[ext_resource path="res://import/Player/Walk/Walk_007.png" type="Texture" id=25]
+[ext_resource path="res://import/Player/Walk/Walk_010.png" type="Texture" id=26]
+[ext_resource path="res://import/Player/Walk/Walk_014.png" type="Texture" id=27]
+[ext_resource path="res://import/Player/Walk/Walk_008.png" type="Texture" id=28]
+[ext_resource path="res://import/Player/Walk/Walk_011.png" type="Texture" id=29]
+[ext_resource path="res://import/Player/Walk/Walk_013.png" type="Texture" id=30]
+[ext_resource path="res://import/Player/Walk/Walk_015.png" type="Texture" id=31]
+[ext_resource path="res://import/Player/Walk/Walk_009.png" type="Texture" id=32]
+[ext_resource path="res://import/Player/Run/Run_007.png" type="Texture" id=33]
+[ext_resource path="res://import/Player/Die/Die_000.png" type="Texture" id=34]
+[ext_resource path="res://import/Player/Die/Die_001.png" type="Texture" id=35]
+[ext_resource path="res://import/Player/Run/Run_006.png" type="Texture" id=36]
+[ext_resource path="res://import/Player/GetHit/GetHit_000.png" type="Texture" id=37]
+[ext_resource path="res://import/Player/GetHit/GetHit_005.png" type="Texture" id=38]
+[ext_resource path="res://import/Player/GetHit/GetHit_006.png" type="Texture" id=39]
+[ext_resource path="res://import/Player/Hit/Hit_009.png" type="Texture" id=40]
+[ext_resource path="res://import/Player/Die/Die_011.png" type="Texture" id=41]
+[ext_resource path="res://import/Player/Die/Die_007.png" type="Texture" id=42]
+[ext_resource path="res://import/Player/Die/Die_015.png" type="Texture" id=43]
+[ext_resource path="res://import/Player/Hit/Hit_011.png" type="Texture" id=44]
+[ext_resource path="res://import/Player/Hit/Hit_000.png" type="Texture" id=45]
+[ext_resource path="res://import/Player/Jump/Jump_006.png" type="Texture" id=46]
+[ext_resource path="res://import/Player/Jump/Jump_007.png" type="Texture" id=47]
+[ext_resource path="res://import/Player/Hit/Hit_002.png" type="Texture" id=48]
+[ext_resource path="res://import/Player/Jump/Jump_000.png" type="Texture" id=49]
+[ext_resource path="res://import/Player/Jump/Jump_003.png" type="Texture" id=50]
+[ext_resource path="res://import/Player/GetHit/GetHit_001.png" type="Texture" id=51]
+[ext_resource path="res://import/Player/GetHit/GetHit_002.png" type="Texture" id=52]
+[ext_resource path="res://import/Player/GetHit/GetHit_004.png" type="Texture" id=53]
+[ext_resource path="res://import/Player/GetHit/GetHit_007.png" type="Texture" id=54]
+[ext_resource path="res://import/Player/Die/Die_014.png" type="Texture" id=55]
+[ext_resource path="res://import/Player/Die/Die_010.png" type="Texture" id=56]
+[ext_resource path="res://import/Player/Die/Die_013.png" type="Texture" id=57]
+[ext_resource path="res://import/Player/Hit/Hit_003.png" type="Texture" id=58]
+[ext_resource path="res://import/Player/Hit/Hit_010.png" type="Texture" id=59]
+[ext_resource path="res://import/Player/Die/Die_004.png" type="Texture" id=60]
+[ext_resource path="res://import/Player/Hit/Hit_008.png" type="Texture" id=61]
+[ext_resource path="res://import/Player/Die/Die_005.png" type="Texture" id=62]
+[ext_resource path="res://import/Player/Die/Die_006.png" type="Texture" id=63]
+[ext_resource path="res://import/Player/Die/Die_009.png" type="Texture" id=64]
+[ext_resource path="res://import/Player/Hit/Hit_001.png" type="Texture" id=65]
+[ext_resource path="res://import/Player/Jump/Jump_001.png" type="Texture" id=66]
+[ext_resource path="res://import/Player/Jump/Jump_002.png" type="Texture" id=67]
+[ext_resource path="res://import/Player/Hit/Hit_006.png" type="Texture" id=68]
+[ext_resource path="res://import/Player/GetHit/GetHit_003.png" type="Texture" id=69]
+[ext_resource path="res://import/Player/Die/Die_012.png" type="Texture" id=70]
+[ext_resource path="res://import/Player/Die/Die_008.png" type="Texture" id=71]
+[ext_resource path="res://import/Player/Hit/Hit_005.png" type="Texture" id=72]
+[ext_resource path="res://import/Player/Hit/Hit_004.png" type="Texture" id=73]
+[ext_resource path="res://import/Player/Hit/Hit_007.png" type="Texture" id=74]
+[ext_resource path="res://import/Player/Jump/Jump_004.png" type="Texture" id=75]
+[ext_resource path="res://import/Player/Jump/Jump_005.png" type="Texture" id=76]
+[ext_resource path="res://script/PlayerH.gd" type="Script" id=77]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 34 ), ExtResource( 35 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 60 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 42 ), ExtResource( 71 ), ExtResource( 64 ), ExtResource( 56 ), ExtResource( 41 ), ExtResource( 70 ), ExtResource( 57 ), ExtResource( 55 ), ExtResource( 43 ) ],
+"loop": true,
+"name": "die",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 76 ), ExtResource( 46 ), ExtResource( 47 ) ],
+"loop": true,
+"name": "fall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 37 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 69 ), ExtResource( 53 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 54 ) ],
+"loop": true,
+"name": "getHit",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 45 ), ExtResource( 65 ), ExtResource( 48 ), ExtResource( 58 ), ExtResource( 73 ), ExtResource( 72 ), ExtResource( 68 ), ExtResource( 74 ), ExtResource( 61 ), ExtResource( 40 ), ExtResource( 59 ), ExtResource( 44 ) ],
+"loop": true,
+"name": "hit",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 3 ), ExtResource( 1 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 49 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 50 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 46 ), ExtResource( 47 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 36 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "run",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 19 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 18 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 25 ), ExtResource( 28 ), ExtResource( 32 ), ExtResource( 26 ), ExtResource( 29 ), ExtResource( 24 ), ExtResource( 30 ), ExtResource( 27 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 70.75, 137.75 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 319.5, 229 )
+
+[node name="PlayerH" type="KinematicBody2D"]
+script = ExtResource( 77 )
+
+[node name="PlayerSprites" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "hit"
+frame = 8
+speed_scale = 3.0
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 3.25, 2.25 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 1.5, 1.5 )
+limit_left = 0
+limit_top = 0
+limit_right = 4096
+limit_bottom = 1080
+
+[node name="PlatformDetector" type="RayCast2D" parent="."]
+position = Vector2( 0, 143 )
+enabled = true
+cast_to = Vector2( 0, 24 )
+
+[node name="attackArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="attackArea"]
+position = Vector2( 0, -20 )
+shape = SubResource( 3 )
+
+[connection signal="animation_finished" from="PlayerSprites" to="." method="_on_PlayerSprites_animation_finished"]
