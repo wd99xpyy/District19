@@ -1518,12 +1518,12 @@ tile_data = PoolIntArray( -1179648, 536870920, 0, -1179627, 536870920, 0, -11796
 
 [node name="Player1" parent="Player" instance=ExtResource( 1 )]
 position = Vector2( 465, -249 )
-playerSprite = ExtResource( 4 )
+playerSprite = ExtResource( 5 )
 PlayerN = 1
 
 [node name="Player2" parent="Player" instance=ExtResource( 1 )]
 position = Vector2( 402, -247 )
-playerSprite = ExtResource( 5 )
+playerSprite = ExtResource( 4 )
 PlayerN = 2
 
 [node name="NPC" type="Node2D" parent="."]
@@ -1532,3 +1532,5 @@ PlayerN = 2
 position = Vector2( 743, -421 )
 dialogue = "res://dialogue/busStation.tres"
 speaker = "e1_start"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
