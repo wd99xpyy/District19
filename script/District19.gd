@@ -12,8 +12,9 @@ func _ready():
 	currentlyPlayer.active()
 	
 func _physics_process(_delta):
-	if Input.is_action_just_pressed("switchCharacter"):
-		switchPlayer()
+	if currentlyPlayer.movement:
+		if Input.is_action_just_pressed("switchCharacter"):
+			switchPlayer()
 
 func switchPlayer():
 	currentlyPlayer.disactive()
