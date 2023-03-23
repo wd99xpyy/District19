@@ -128,12 +128,13 @@ extents = Vector2( 70.75, 137.75 )
 extents = Vector2( 319.5, 229 )
 
 [node name="PlayerH" type="KinematicBody2D"]
+position = Vector2( 0, -1 )
 script = ExtResource( 77 )
 
 [node name="PlayerSprites" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "hit"
-frame = 8
+frame = 1
 speed_scale = 3.0
 playing = true
 
@@ -146,7 +147,7 @@ current = true
 zoom = Vector2( 1.5, 1.5 )
 limit_left = 0
 limit_top = 0
-limit_right = 4096
+limit_right = 6000
 limit_bottom = 1080
 
 [node name="PlatformDetector" type="RayCast2D" parent="."]

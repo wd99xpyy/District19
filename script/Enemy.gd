@@ -8,6 +8,8 @@ var attack = false
 var direction = Vector2.ZERO
 var death = false
 
+onready var coin = preload("res://object/coin.tscn")
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$"../PlayerH".connect("effective_attack",self,"Hurt") 
@@ -66,4 +68,7 @@ func _on_EnemySprite_animation_finished():
 	if sprite.animation == "attack":
 		emit_signal("effective_attack")
 	if sprite.animation == "death":
+		var dropCoin = coin.instance()
+		dropCoin.position = $".".position
+		get_parent().add_child(dropCoin)
 		queue_free()

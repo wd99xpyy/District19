@@ -124,7 +124,7 @@ script = ExtResource( 85 )
 [node name="EnemySprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "idle"
-frame = 10
+frame = 16
 speed_scale = 3.0
 playing = true
 
