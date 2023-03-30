@@ -4,7 +4,6 @@ extends Node
 signal dialogue_started
 signal dialogue_finished
 signal endDialogue #QW
-
 const DialogueResource = preload("res://addons/dialogue_manager/dialogue_resource.gd")
 const DialogueConstants = preload("res://addons/dialogue_manager/constants.gd")
 const DialogueSettings = preload("res://addons/dialogue_manager/components/settings.gd")
@@ -348,10 +347,13 @@ func mutate(mutation: Dictionary) -> void:
 					if state.has_signal(args[0]):
 						match args.size():
 							1:
+								print(state)
 								state.emit_signal(args[0])
 							2:
+								print(state)
 								state.emit_signal(args[0], args[1])
 							3:
+								print(state)
 								state.emit_signal(args[0], args[1], args[2])
 							4:
 								state.emit_signal(args[0], args[1], args[2], args[3])

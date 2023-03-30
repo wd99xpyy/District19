@@ -1,6 +1,5 @@
 extends KinematicBody2D
 
-signal effective_attack
 var velocity = Vector2()
 export (int) var xspeed = 300
 onready var sprite = $EnemySprite
@@ -12,7 +11,7 @@ onready var coin = preload("res://object/coin.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$"../PlayerH".connect("effective_attack",self,"Hurt") 
+	Global.connect("Player_effective_attack",self,"Hurt") 
 
 func _physics_process(_delta):
 	#velocity.y += 45
@@ -66,7 +65,7 @@ func _on_SearchArea_body_exited(body):
 
 func _on_EnemySprite_animation_finished():
 	if sprite.animation == "attack":
-		emit_signal("effective_attack")
+		Global.emit_signal("Enemy_effective_attack")
 	if sprite.animation == "death":
 		var dropCoin = coin.instance()
 		dropCoin.position = $".".position

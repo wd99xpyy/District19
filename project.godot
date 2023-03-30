@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="District 19"
-run/main_scene="res://scene/District19.tscn"
+run/main_scene="res://scene/MainMenu.tscn"
 config/icon="res://icon.png"
 
 [autoload]

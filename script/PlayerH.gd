@@ -3,18 +3,14 @@ extends KinematicBody2D
 var velocity = Vector2()
 export (int) var xspeed = 300
 export (int) var yspeed = 900
-onready var enemy = $"../Enemy"
 onready var sprite = $PlayerSprites
 var attack = false
 var lives = 5
 var beAttack = false
-signal effective_attack
+
 
 func _ready():
-	enemy.connect("effective_attack",self,"Hurt") 
-	$"../Enemy2".connect("effective_attack",self,"Hurt") 
-	$"../Enemy3".connect("effective_attack",self,"Hurt") 
-	$"../Enemy4".connect("effective_attack",self,"Hurt") 
+	Global.connect("Enemy_effective_attack",self,"Hurt") 
 
 func _physics_process(_delta):
 	if Input.is_action_pressed("switchScene"):
@@ -76,13 +72,14 @@ func get_new_animation():
 
 func _on_PlayerSprites_animation_finished():
 	if sprite.animation == "hit":
-		emit_signal("effective_attack")
+		Global.emit_signal("Player_effective_attack")
 		attack = false
 	if sprite.animation == "die":
 		queue_free()
 		get_tree().change_scene("res://scene/District19.tscn")
 	if sprite.animation == "getHit":
 		beAttack = false
+		attack = false
 
 func Hurt():
 	if beAttack == false:

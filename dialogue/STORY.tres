@@ -1,0 +1,130 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogue_manager/dialogue_resource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+resource_version = 28
+syntax_version = 2
+raw_text = "~ DISTRICT19
+District 19 is a city without order, without justice, and without hope.
+The city was ruled by gangs, violence, and corruption.
+The people who lived there were struggling to survive every day.
+Ava hoped to use her own power to bring about change in the city.
+Ava used all her wealth to establish an orphanage on barren land to shelter children who felt lost and uncertain about their future, and to impart knowledge and skills to them.
+Ava: \"People always have hope for the future.\"
+do emit(\"!\")
+=> END
+
+~ finish
+See you next time [next=auto]
+=> END
+
+~ abort
+=> END"
+errors = [  ]
+titles = {
+"DISTRICT19": "1",
+"abort": "15",
+"finish": "11"
+}
+lines = {
+"0": {
+"next_id": "1",
+"text": "DISTRICT19",
+"type": "title"
+},
+"1": {
+"character": "",
+"next_id": "2",
+"replacements": [  ],
+"text": "District 19 is a city without order, without justice, and without hope.",
+"translation_key": "District 19 is a city without order, without justice, and without hope.",
+"type": "dialogue"
+},
+"10": {
+"next_id": "11",
+"text": "finish",
+"type": "title"
+},
+"11": {
+"character": "",
+"next_id": "12",
+"replacements": [  ],
+"text": "See you next time [next=auto]",
+"translation_key": "See you next time [next=auto]",
+"type": "dialogue"
+},
+"12": {
+"next_id": "end",
+"type": "goto"
+},
+"14": {
+"next_id": "15",
+"text": "abort",
+"type": "title"
+},
+"15": {
+"next_id": "end",
+"type": "goto"
+},
+"2": {
+"character": "",
+"next_id": "3",
+"replacements": [  ],
+"text": "The city was ruled by gangs, violence, and corruption.",
+"translation_key": "The city was ruled by gangs, violence, and corruption.",
+"type": "dialogue"
+},
+"3": {
+"character": "",
+"next_id": "4",
+"replacements": [  ],
+"text": "The people who lived there were struggling to survive every day.",
+"translation_key": "The people who lived there were struggling to survive every day.",
+"type": "dialogue"
+},
+"4": {
+"character": "",
+"next_id": "5",
+"replacements": [  ],
+"text": "Ava hoped to use her own power to bring about change in the city.",
+"translation_key": "Ava hoped to use her own power to bring about change in the city.",
+"type": "dialogue"
+},
+"5": {
+"character": "",
+"next_id": "6",
+"replacements": [  ],
+"text": "Ava used all her wealth to establish an orphanage on barren land to shelter children who felt lost and uncertain about their future, and to impart knowledge and skills to them.",
+"translation_key": "Ava used all her wealth to establish an orphanage on barren land to shelter children who felt lost and uncertain about their future, and to impart knowledge and skills to them.",
+"type": "dialogue"
+},
+"6": {
+"character": "Ava",
+"character_replacements": [  ],
+"next_id": "7",
+"replacements": [  ],
+"text": "\"People always have hope for the future.\"",
+"translation_key": "\"People always have hope for the future.\"",
+"type": "dialogue"
+},
+"7": {
+"mutation": {
+"expression": [ {
+"function": "emit",
+"type": "function",
+"value": [ [ {
+"type": "string",
+"value": "!"
+} ] ]
+} ]
+},
+"next_id": "8",
+"type": "mutation"
+},
+"8": {
+"next_id": "end",
+"type": "goto"
+}
+}

@@ -4,7 +4,7 @@
 anchor_right = 0.5
 anchor_bottom = 0.5
 rect_min_size = Vector2( 600, 500 )
-window_title = "Open a File"
+window_title = "打开文件"
 mode = 0
 filters = PoolStringArray( "*.tres ; Resources" )
 __meta__ = {
