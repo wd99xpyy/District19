@@ -1,7 +1,7 @@
 extends Node
 signal Player_effective_attack
 signal Enemy_effective_attack
-signal changeScene(scene)#QW
+signal changeSceneToDistrict#QW
 var coin = 0
 var invetory = []
 # var a = 2

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 28
+resource_version = 29
 syntax_version = 2
 raw_text = "~ DISTRICT19
 District 19 is a city without order, without justice, and without hope.
@@ -13,11 +13,10 @@ The people who lived there were struggling to survive every day.
 Ava hoped to use her own power to bring about change in the city.
 Ava used all her wealth to establish an orphanage on barren land to shelter children who felt lost and uncertain about their future, and to impart knowledge and skills to them.
 Ava: \"People always have hope for the future.\"
-do emit(\"!\")
+do emit(\"changeSceneToDistrict\")
 => END
 
 ~ finish
-See you next time [next=auto]
 => END
 
 ~ abort
@@ -25,7 +24,7 @@ See you next time [next=auto]
 errors = [  ]
 titles = {
 "DISTRICT19": "1",
-"abort": "15",
+"abort": "14",
 "finish": "11"
 }
 lines = {
@@ -48,23 +47,15 @@ lines = {
 "type": "title"
 },
 "11": {
-"character": "",
-"next_id": "12",
-"replacements": [  ],
-"text": "See you next time [next=auto]",
-"translation_key": "See you next time [next=auto]",
-"type": "dialogue"
-},
-"12": {
 "next_id": "end",
 "type": "goto"
 },
-"14": {
-"next_id": "15",
+"13": {
+"next_id": "14",
 "text": "abort",
 "type": "title"
 },
-"15": {
+"14": {
 "next_id": "end",
 "type": "goto"
 },
@@ -116,7 +107,7 @@ lines = {
 "type": "function",
 "value": [ [ {
 "type": "string",
-"value": "!"
+"value": "changeSceneToDistrict"
 } ] ]
 } ]
 },
