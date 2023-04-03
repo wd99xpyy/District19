@@ -4,7 +4,7 @@
 
  This still a Demo, made by godot
 
-["Direct 19"](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20144943.png)
+[Screenshot](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20144943.png)
 
 Controls:
 
@@ -25,26 +25,26 @@ F to pickup mushroom
 CAPS LOCK or Q to switch scene
 
 Get in to the game, found EVA for task first task
-["there is EVA"](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20150126.png)
+[Screenshot](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20150126.png)
 
 Follow the Task to found those people. Remember, the time is limitate
-["task"](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20150419.png)
-["time"](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20150437.png)
+[Screenshot](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20150419.png)
+[Screenshot](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20150437.png)
 
 
 Talk to them and reopen the task, You can found you get new task
-["task"](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20150824.png)
+[Screenshot](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20150824.png)
 
 To get mushroom, click Q or CAPSLOCK to change to another scene. You can fight to get coins and found mushroom at here
-["horizontal"](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20151148.png)
+[Screenshot](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20151148.png)
 
 Click B to see what you have
-["bag"](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20151321.png)
+[Screenshot](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20151321.png)
 
 Click T to trade
-["trade"](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20151446.png)
+[Screenshot](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20151446.png)
 
 Make sure you have enough mushroom at the end of the time. you can sell and buy mushrooms by coin
 Every time you succeed, the next time will be harder
 When the player loses, there will be an ending, telling the player how many days he survived
-["end"](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20151833.png)
+[Screenshot](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20151833.png)
