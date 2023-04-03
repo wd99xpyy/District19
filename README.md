@@ -27,13 +27,11 @@ CAPS LOCK or Q to switch scene
 Get in to the game, found EVA for task first task
 ![Screenshot](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20150126.png)
 
-Follow the Task to found those people. Remember, the time is limitate
 ![Screenshot](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20150419.png)
 ![Screenshot](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20150437.png)
-
-
-Talk to them and reopen the task, You can found you get new task
 ![Screenshot](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20150824.png)
+Follow the Task to found those people. Remember, the time is limitate
+Talk to them and reopen the task, You can found you get new task
 
 To get mushroom, click Q or CAPSLOCK to change to another scene. You can fight to get coins and found mushroom at here
 ![Screenshot](https://wd99xpy.neocities.org/Direct%2019/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-03%20151148.png)
