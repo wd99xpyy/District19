@@ -10,6 +10,7 @@ var convo
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Global.resetGlobal()
 	Global.connect("changeScene",self,"loadToDistrict")
 	if dialogue != null:
 		convo = load(dialogue)
@@ -24,8 +25,7 @@ func _on_Button_pressed():
 	$Button.hide()
 	$Button2.hide()
 	var dia = DialogueManager.show_example_dialogue_balloon(speaker, convo)
-	get_tree().change_scene("res://scene/District19.tscn")
+	#get_tree().change_scene("res://scene/District19.tscn")
 
-func loadToDistrict(scene):
-	if scene == "direct":
-		get_tree().change_scene("res://scene/District19.tscn")
+func loadToDistrict():
+	get_tree().change_scene("res://scene/District19.tscn")

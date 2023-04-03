@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Premade_Character_32x32_05.png-32ada7e8f5781f38d4b96e4a9d0223d0.stex"
+path="res://.import/Jackson.png-b1fb7454d7266c4990fb7ce88e3cdf9a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://import/Premade_Character_32x32_05.png"
-dest_files=[ "res://.import/Premade_Character_32x32_05.png-32ada7e8f5781f38d4b96e4a9d0223d0.stex" ]
+source_file="res://import/Jackson.png"
+dest_files=[ "res://.import/Jackson.png-b1fb7454d7266c4990fb7ce88e3cdf9a.stex" ]
 
 [params]
 

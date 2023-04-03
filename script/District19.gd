@@ -10,22 +10,39 @@ var currentlyPlayer
 func _ready():
 	currentlyPlayer = $Player/Player1
 	currentlyPlayer.active()
+	if Global.timeH <1:
+		#$CanvasLayer/TaskList/TextureRect/Task.queue_free()
+		$NPC/EVA.convo = null
+		$CanvasLayer/TaskList.get_node("TextureRect").remove_child($CanvasLayer/TaskList.get_node("TextureRect").get_child(0))
+		$CanvasLayer/DateandTime.StartTime()
+		if Global.EmmaTask == "":
+			$CanvasLayer/TaskList.addTask("Talk with Emma", "EVA")
+			$NPC/Emma.setDialogue()
+		else:
+			$CanvasLayer/TaskList.addTask(Global.EmmaTask + "(" + String(Global.EmmaTasknum) + ")", "Emma")
+			$NPC/Emma.unsetDialogue("Emma")
+		if Global.JacksonTask == "":
+			$CanvasLayer/TaskList.addTask("Talk with Jackson", "EVA")
+			$NPC/Jackson.setDialogue()
+		else:
+			$CanvasLayer/TaskList.addTask(Global.JacksonTask + "(" + String(Global.JacksonTasknum) + ")", "Jackson")
+			$NPC/Jackson.unsetDialogue("Jackson")
+		if Global.LucasTask == "":
+			$CanvasLayer/TaskList.addTask("Talk with Lucas", "EVA")
+			$NPC/Lucas.setDialogue()
+		else:
+			$CanvasLayer/TaskList.addTask(Global.LucasTask + "(" + String(Global.LucasTasknum) + ")", "Lucas")
+			$NPC/Lucas.unsetDialogue("Lucas")
+		if Global.OliverTask == "":
+			$CanvasLayer/TaskList.addTask("Talk with Oliver", "EVA")
+			$NPC/Oliver.setDialogue()
+		else:
+			$CanvasLayer/TaskList.addTask(Global.OliverTask + "(" + String(Global.OliverTasknum) + ")", "Oliver")
+			$NPC/Oliver.unsetDialogue("Oliver")
+						
+	
 	
 func _physics_process(_delta):
-	if currentlyPlayer.movement:
-		if Input.is_action_just_pressed("switchCharacter"):
-			switchPlayer()
+	pass
 
-func switchPlayer():
-	currentlyPlayer.disactive()
-	currentlyPlayer = get_next_Player()
-	currentlyPlayer.active()
-	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-func get_next_Player():
-	if currentlyPlayer.PlayerN<$Player.get_child_count():
-		return $Player.get_child(currentlyPlayer.PlayerN)
-	else:
-		return $Player.get_child(0)
+

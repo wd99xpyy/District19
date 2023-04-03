@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 28
+resource_version = 29
 syntax_version = 2
 raw_text = "~ DISTRICT19
 District 19 is a city without order, without justice, and without hope.
@@ -13,7 +13,7 @@ The people who lived there were struggling to survive every day.
 Ava hoped to use her own power to bring about change in the city.
 Ava used all her wealth to establish an orphanage on barren land to shelter children who felt lost and uncertain about their future, and to impart knowledge and skills to them.
 Ava: \"People always have hope for the future.\"
-do emit(\"!\")
+do emit(\"changeScene\")
 => END
 
 ~ finish
@@ -116,7 +116,7 @@ lines = {
 "type": "function",
 "value": [ [ {
 "type": "string",
-"value": "!"
+"value": "changeScene"
 } ] ]
 } ]
 },

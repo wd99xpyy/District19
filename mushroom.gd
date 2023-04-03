@@ -14,7 +14,7 @@ func _physics_process(_delta):
 	if Input.is_action_just_pressed("pickup"):
 		if isPlayerHere:
 			print("pickup")
-			Global.invetory.push_back("mushroom")
+			Global.invetory.push_back("White Mushroom")
 			print(Global.invetory)
 			queue_free()
 

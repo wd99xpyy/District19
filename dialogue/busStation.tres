@@ -4,38 +4,53 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 4
+resource_version = 11
 syntax_version = 2
 raw_text = "~ e1_start
-Hi, nice to meet you
-- Hi => e1_enter
+EVA: Hi Carte, Can we have a talk?
+- yes => e1_enter
 
 ~ e1_enter
-Could you please help me to get some mushrooms from forest?
-- That too far? => e2_enter
+EVA: I've been thinking about the future of this orphanage.
+EVA: I realized that we need to start preparing the younger kids for life outside these walls.
+EVA: Can you help me?
+- Yeah, I'd be happy to. What can I do? => e2_enter
 
 ~ e2_enter
-I can buy bus ticket for you! And pay for the mushrooms.
-- Why not by it in market ? => e3_enter
+EVA: Show them how to do things around here, like cooking, cleaning, or gardening.
+- You know I'm not good at these => e3_enter
 
 ~ e3_enter
-Aggie: I want something fresher
-- All right! => END
+EVA: The most important thing is show them how to survive.
+- ...... => e4_enter
+
+~ e4_enter
+EVA: Carte, my time is running out.
+- What do you mean, EVA? Are you okay? => e5_enter
+
+~ e5_enter
+EVA: Carte, Teach them how to survive, in your way.
+- ...... I will, EVA...... 
+do emit(\"SeasonBegin\") 
+do emit(\"TaskNPCTalk\")
+=> END
 
 ~ finish
-See you next time [next=auto]
+Hope to see you next time [next=auto]
 => END
 
 ~ abort
 => END"
 errors = [  ]
 titles = {
-"abort": "21",
+"abort": "34",
 "e1_enter": "5",
 "e1_start": "1",
-"e2_enter": "9",
-"e3_enter": "13",
-"finish": "17"
+"e2_enter": "11",
+"e3_enter": "15",
+"e4_enter": "19",
+"e5_enter": "23",
+"finish": "30"
 }
 lines = {
 "0": {
@@ -44,77 +59,170 @@ lines = {
 "type": "title"
 },
 "1": {
-"character": "",
+"character": "EVA",
+"character_replacements": [  ],
 "next_id": "2",
 "replacements": [  ],
-"text": "Hi, nice to meet you",
-"translation_key": "Hi, nice to meet you",
+"text": "Hi Carte, Can we have a talk?",
+"translation_key": "Hi Carte, Can we have a talk?",
 "type": "dialogue"
 },
 "10": {
-"next_id": "13",
-"next_id_after": "end!",
+"next_id": "11",
+"text": "e2_enter",
+"type": "title"
+},
+"11": {
+"character": "EVA",
+"character_replacements": [  ],
+"next_id": "12",
 "replacements": [  ],
-"responses": PoolStringArray( "10" ),
-"text": "Why not by it in market ?",
-"translation_key": "Why not by it in market ?",
-"type": "response"
+"text": "Show them how to do things around here, like cooking, cleaning, or gardening.",
+"translation_key": "Show them how to do things around here, like cooking, cleaning, or gardening.",
+"type": "dialogue"
 },
 "12": {
-"next_id": "13",
+"next_id": "15",
+"next_id_after": "end!",
+"replacements": [  ],
+"responses": PoolStringArray( "12" ),
+"text": "You know I'm not good at these",
+"translation_key": "You know I'm not good at these",
+"type": "response"
+},
+"14": {
+"next_id": "15",
 "text": "e3_enter",
 "type": "title"
 },
-"13": {
-"character": "Aggie",
+"15": {
+"character": "EVA",
 "character_replacements": [  ],
-"next_id": "14",
+"next_id": "16",
 "replacements": [  ],
-"text": "I want something fresher",
-"translation_key": "I want something fresher",
+"text": "The most important thing is show them how to survive.",
+"translation_key": "The most important thing is show them how to survive.",
 "type": "dialogue"
-},
-"14": {
-"next_id": "end",
-"next_id_after": "end!",
-"replacements": [  ],
-"responses": PoolStringArray( "14" ),
-"text": "All right!",
-"translation_key": "All right!",
-"type": "response"
 },
 "16": {
-"next_id": "17",
-"text": "finish",
-"type": "title"
-},
-"17": {
-"character": "",
-"next_id": "18",
+"next_id": "19",
+"next_id_after": "end!",
 "replacements": [  ],
-"text": "See you next time [next=auto]",
-"translation_key": "See you next time [next=auto]",
-"type": "dialogue"
+"responses": PoolStringArray( "16" ),
+"text": "......",
+"translation_key": "......",
+"type": "response"
 },
 "18": {
-"next_id": "end",
-"type": "goto"
+"next_id": "19",
+"text": "e4_enter",
+"type": "title"
+},
+"19": {
+"character": "EVA",
+"character_replacements": [  ],
+"next_id": "20",
+"replacements": [  ],
+"text": "Carte, my time is running out.",
+"translation_key": "Carte, my time is running out.",
+"type": "dialogue"
 },
 "2": {
 "next_id": "5",
 "next_id_after": "end!",
 "replacements": [  ],
 "responses": PoolStringArray( "2" ),
-"text": "Hi",
-"translation_key": "Hi",
+"text": "yes",
+"translation_key": "yes",
 "type": "response"
 },
 "20": {
-"next_id": "21",
+"next_id": "23",
+"next_id_after": "end!",
+"replacements": [  ],
+"responses": PoolStringArray( "20" ),
+"text": "What do you mean, EVA? Are you okay?",
+"translation_key": "What do you mean, EVA? Are you okay?",
+"type": "response"
+},
+"22": {
+"next_id": "23",
+"text": "e5_enter",
+"type": "title"
+},
+"23": {
+"character": "EVA",
+"character_replacements": [  ],
+"next_id": "24",
+"replacements": [  ],
+"text": "Carte, Teach them how to survive, in your way.",
+"translation_key": "Carte, Teach them how to survive, in your way.",
+"type": "dialogue"
+},
+"24": {
+"next_id": "25",
+"next_id_after": "25",
+"replacements": [  ],
+"responses": PoolStringArray( "24" ),
+"text": "...... I will, EVA......",
+"translation_key": "...... I will, EVA......",
+"type": "response"
+},
+"25": {
+"mutation": {
+"expression": [ {
+"function": "emit",
+"type": "function",
+"value": [ [ {
+"type": "string",
+"value": "SeasonBegin"
+} ] ]
+} ]
+},
+"next_id": "26",
+"type": "mutation"
+},
+"26": {
+"mutation": {
+"expression": [ {
+"function": "emit",
+"type": "function",
+"value": [ [ {
+"type": "string",
+"value": "TaskNPCTalk"
+} ] ]
+} ]
+},
+"next_id": "27",
+"type": "mutation"
+},
+"27": {
+"next_id": "end",
+"type": "goto"
+},
+"29": {
+"next_id": "30",
+"text": "finish",
+"type": "title"
+},
+"30": {
+"character": "",
+"next_id": "31",
+"replacements": [  ],
+"text": "Hope to see you next time [next=auto]",
+"translation_key": "Hope to see you next time [next=auto]",
+"type": "dialogue"
+},
+"31": {
+"next_id": "end",
+"type": "goto"
+},
+"33": {
+"next_id": "34",
 "text": "abort",
 "type": "title"
 },
-"21": {
+"34": {
 "next_id": "end",
 "type": "goto"
 },
@@ -124,33 +232,39 @@ lines = {
 "type": "title"
 },
 "5": {
-"character": "",
+"character": "EVA",
+"character_replacements": [  ],
 "next_id": "6",
 "replacements": [  ],
-"text": "Could you please help me to get some mushrooms from forest?",
-"translation_key": "Could you please help me to get some mushrooms from forest?",
+"text": "I've been thinking about the future of this orphanage.",
+"translation_key": "I've been thinking about the future of this orphanage.",
 "type": "dialogue"
 },
 "6": {
-"next_id": "9",
-"next_id_after": "end!",
+"character": "EVA",
+"character_replacements": [  ],
+"next_id": "7",
 "replacements": [  ],
-"responses": PoolStringArray( "6" ),
-"text": "That too far?",
-"translation_key": "That too far?",
-"type": "response"
+"text": "I realized that we need to start preparing the younger kids for life outside these walls.",
+"translation_key": "I realized that we need to start preparing the younger kids for life outside these walls.",
+"type": "dialogue"
+},
+"7": {
+"character": "EVA",
+"character_replacements": [  ],
+"next_id": "8",
+"replacements": [  ],
+"text": "Can you help me?",
+"translation_key": "Can you help me?",
+"type": "dialogue"
 },
 "8": {
-"next_id": "9",
-"text": "e2_enter",
-"type": "title"
-},
-"9": {
-"character": "",
-"next_id": "10",
+"next_id": "11",
+"next_id_after": "end!",
 "replacements": [  ],
-"text": "I can buy bus ticket for you! And pay for the mushrooms.",
-"translation_key": "I can buy bus ticket for you! And pay for the mushrooms.",
-"type": "dialogue"
+"responses": PoolStringArray( "8" ),
+"text": "Yeah, I'd be happy to. What can I do?",
+"translation_key": "Yeah, I'd be happy to. What can I do?",
+"type": "response"
 }
 }

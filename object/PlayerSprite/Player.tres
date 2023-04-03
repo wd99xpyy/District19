@@ -1,6 +1,6 @@
 [gd_resource type="SpriteFrames" load_steps=50 format=2]
 
-[ext_resource path="res://import/Modern_Exteriors_Characters_Scout_32x32_6.png" type="Texture" id=1]
+[ext_resource path="res://import/Oliver.png" type="Texture" id=1]
 
 [sub_resource type="AtlasTexture" id=88]
 flags = 4

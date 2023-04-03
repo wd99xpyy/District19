@@ -1,0 +1,618 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogue_manager/dialogue_resource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+resource_version = 7
+syntax_version = 2
+raw_text = "~ Emma
+Emma: Good Morning, Carte!
+- Good Morning. Can We have a talk?
+Emma: Of course.
+- Do you have any plan for your future?
+Emma: Future? En...
+Emma: Maybe I can become a teacher, just like EVA!
+Emma: But, the most important thing is that we all together.
+- A teacher, Great idea. If you need any help,let me know
+Emma: Just right now!
+- Ok, I will bring it back
+do emit(\"addSeasonalTask\",\"Emma\")
+=> END
+
+~ Jackson
+Jackson: Hi, Carte!
+- Hi, Can We have a talk?
+Jackson: Of course.
+- Do you have any plan for your future?
+Jackson: Of course I'll be the greatest ice cream master
+Jackson: In the future, we can eat ice cream together every day!
+- That sounds great! If you need any help,let me know
+Jackson: Ofcourse! Eva allows you to go out! bring me something back
+- Ok~
+do emit(\"addSeasonalTask\",\"Jackson\")
+=> END
+~ Lucas
+Lucas: Hi
+- Hi, Can We have a talk?
+Lucas: Yeah.
+- Do you have any plan for your future?
+Lucas: Let the flowers bloom here.
+Lucas: I hope our home will flourish
+- WOW! If you need any help,let me know
+Lucas: Yeas, I need some......
+- I will handle it!
+do emit(\"addSeasonalTask\",\"Lucas\")
+=> END
+~ Oliver
+Oliver: ...
+- Hi, Oliver, Can We have a talk?
+Oliver: ...
+- Emmmm, Do you have any plan for your future?
+Oliver: ......
+Oliver: Car...
+- ...
+Oliver: Make Car......
+- You will succeed Oliver. If you need any help,let me know.
+Oliver: ......
+- anytime, just let me know.
+Oliver: Mushroom...
+- Ok! I will found that!
+Oliver: Carte
+- ?
+Oliver: Safe journey
+-Of course!
+do emit(\"addSeasonalTask\",\"Oliver\")
+=> END
+~ finish
+See you next time [next=auto]
+=> END
+
+~ abort
+=> END
+"
+errors = [  ]
+titles = {
+"Emma": "1",
+"Jackson": "15",
+"Lucas": "27",
+"Oliver": "39",
+"abort": "63",
+"finish": "59"
+}
+lines = {
+"0": {
+"next_id": "1",
+"text": "Emma",
+"type": "title"
+},
+"1": {
+"character": "Emma",
+"character_replacements": [  ],
+"next_id": "2",
+"replacements": [  ],
+"text": "Good Morning, Carte!",
+"translation_key": "Good Morning, Carte!",
+"type": "dialogue"
+},
+"10": {
+"next_id": "11",
+"next_id_after": "11",
+"replacements": [  ],
+"responses": PoolStringArray( "10" ),
+"text": "Ok, I will bring it back",
+"translation_key": "Ok, I will bring it back",
+"type": "response"
+},
+"11": {
+"mutation": {
+"expression": [ {
+"function": "emit",
+"type": "function",
+"value": [ [ {
+"type": "string",
+"value": "addSeasonalTask"
+} ], [ {
+"type": "string",
+"value": "Emma"
+} ] ]
+} ]
+},
+"next_id": "12",
+"type": "mutation"
+},
+"12": {
+"next_id": "end",
+"type": "goto"
+},
+"14": {
+"next_id": "15",
+"text": "Jackson",
+"type": "title"
+},
+"15": {
+"character": "Jackson",
+"character_replacements": [  ],
+"next_id": "16",
+"replacements": [  ],
+"text": "Hi, Carte!",
+"translation_key": "Hi, Carte!",
+"type": "dialogue"
+},
+"16": {
+"next_id": "17",
+"next_id_after": "17",
+"replacements": [  ],
+"responses": PoolStringArray( "16" ),
+"text": "Hi, Can We have a talk?",
+"translation_key": "Hi, Can We have a talk?",
+"type": "response"
+},
+"17": {
+"character": "Jackson",
+"character_replacements": [  ],
+"next_id": "18",
+"replacements": [  ],
+"text": "Of course.",
+"translation_key": "Of course.",
+"type": "dialogue"
+},
+"18": {
+"next_id": "19",
+"next_id_after": "19",
+"replacements": [  ],
+"responses": PoolStringArray( "18" ),
+"text": "Do you have any plan for your future?",
+"translation_key": "Do you have any plan for your future?",
+"type": "response"
+},
+"19": {
+"character": "Jackson",
+"character_replacements": [  ],
+"next_id": "20",
+"replacements": [  ],
+"text": "Of course I'll be the greatest ice cream master",
+"translation_key": "Of course I'll be the greatest ice cream master",
+"type": "dialogue"
+},
+"2": {
+"next_id": "3",
+"next_id_after": "3",
+"replacements": [  ],
+"responses": PoolStringArray( "2" ),
+"text": "Good Morning. Can We have a talk?",
+"translation_key": "Good Morning. Can We have a talk?",
+"type": "response"
+},
+"20": {
+"character": "Jackson",
+"character_replacements": [  ],
+"next_id": "21",
+"replacements": [  ],
+"text": "In the future, we can eat ice cream together every day!",
+"translation_key": "In the future, we can eat ice cream together every day!",
+"type": "dialogue"
+},
+"21": {
+"next_id": "22",
+"next_id_after": "22",
+"replacements": [  ],
+"responses": PoolStringArray( "21" ),
+"text": "That sounds great! If you need any help,let me know",
+"translation_key": "That sounds great! If you need any help,let me know",
+"type": "response"
+},
+"22": {
+"character": "Jackson",
+"character_replacements": [  ],
+"next_id": "23",
+"replacements": [  ],
+"text": "Ofcourse! Eva allows you to go out! bring me something back",
+"translation_key": "Ofcourse! Eva allows you to go out! bring me something back",
+"type": "dialogue"
+},
+"23": {
+"next_id": "24",
+"next_id_after": "24",
+"replacements": [  ],
+"responses": PoolStringArray( "23" ),
+"text": "Ok~",
+"translation_key": "Ok~",
+"type": "response"
+},
+"24": {
+"mutation": {
+"expression": [ {
+"function": "emit",
+"type": "function",
+"value": [ [ {
+"type": "string",
+"value": "addSeasonalTask"
+} ], [ {
+"type": "string",
+"value": "Jackson"
+} ] ]
+} ]
+},
+"next_id": "25",
+"type": "mutation"
+},
+"25": {
+"next_id": "end",
+"type": "goto"
+},
+"26": {
+"next_id": "27",
+"text": "Lucas",
+"type": "title"
+},
+"27": {
+"character": "Lucas",
+"character_replacements": [  ],
+"next_id": "28",
+"replacements": [  ],
+"text": "Hi",
+"translation_key": "Hi",
+"type": "dialogue"
+},
+"28": {
+"next_id": "29",
+"next_id_after": "29",
+"replacements": [  ],
+"responses": PoolStringArray( "28" ),
+"text": "Hi, Can We have a talk?",
+"translation_key": "Hi, Can We have a talk?",
+"type": "response"
+},
+"29": {
+"character": "Lucas",
+"character_replacements": [  ],
+"next_id": "30",
+"replacements": [  ],
+"text": "Yeah.",
+"translation_key": "Yeah.",
+"type": "dialogue"
+},
+"3": {
+"character": "Emma",
+"character_replacements": [  ],
+"next_id": "4",
+"replacements": [  ],
+"text": "Of course.",
+"translation_key": "Of course.",
+"type": "dialogue"
+},
+"30": {
+"next_id": "31",
+"next_id_after": "31",
+"replacements": [  ],
+"responses": PoolStringArray( "30" ),
+"text": "Do you have any plan for your future?",
+"translation_key": "Do you have any plan for your future?",
+"type": "response"
+},
+"31": {
+"character": "Lucas",
+"character_replacements": [  ],
+"next_id": "32",
+"replacements": [  ],
+"text": "Let the flowers bloom here.",
+"translation_key": "Let the flowers bloom here.",
+"type": "dialogue"
+},
+"32": {
+"character": "Lucas",
+"character_replacements": [  ],
+"next_id": "33",
+"replacements": [  ],
+"text": "I hope our home will flourish",
+"translation_key": "I hope our home will flourish",
+"type": "dialogue"
+},
+"33": {
+"next_id": "34",
+"next_id_after": "34",
+"replacements": [  ],
+"responses": PoolStringArray( "33" ),
+"text": "WOW! If you need any help,let me know",
+"translation_key": "WOW! If you need any help,let me know",
+"type": "response"
+},
+"34": {
+"character": "Lucas",
+"character_replacements": [  ],
+"next_id": "35",
+"replacements": [  ],
+"text": "Yeas, I need some......",
+"translation_key": "Yeas, I need some......",
+"type": "dialogue"
+},
+"35": {
+"next_id": "36",
+"next_id_after": "36",
+"replacements": [  ],
+"responses": PoolStringArray( "35" ),
+"text": "I will handle it!",
+"translation_key": "I will handle it!",
+"type": "response"
+},
+"36": {
+"mutation": {
+"expression": [ {
+"function": "emit",
+"type": "function",
+"value": [ [ {
+"type": "string",
+"value": "addSeasonalTask"
+} ], [ {
+"type": "string",
+"value": "Lucas"
+} ] ]
+} ]
+},
+"next_id": "37",
+"type": "mutation"
+},
+"37": {
+"next_id": "end",
+"type": "goto"
+},
+"38": {
+"next_id": "39",
+"text": "Oliver",
+"type": "title"
+},
+"39": {
+"character": "Oliver",
+"character_replacements": [  ],
+"next_id": "40",
+"replacements": [  ],
+"text": "...",
+"translation_key": "...",
+"type": "dialogue"
+},
+"4": {
+"next_id": "5",
+"next_id_after": "5",
+"replacements": [  ],
+"responses": PoolStringArray( "4" ),
+"text": "Do you have any plan for your future?",
+"translation_key": "Do you have any plan for your future?",
+"type": "response"
+},
+"40": {
+"next_id": "41",
+"next_id_after": "41",
+"replacements": [  ],
+"responses": PoolStringArray( "40" ),
+"text": "Hi, Oliver, Can We have a talk?",
+"translation_key": "Hi, Oliver, Can We have a talk?",
+"type": "response"
+},
+"41": {
+"character": "Oliver",
+"character_replacements": [  ],
+"next_id": "42",
+"replacements": [  ],
+"text": "...",
+"translation_key": "...",
+"type": "dialogue"
+},
+"42": {
+"next_id": "43",
+"next_id_after": "43",
+"replacements": [  ],
+"responses": PoolStringArray( "42" ),
+"text": "Emmmm, Do you have any plan for your future?",
+"translation_key": "Emmmm, Do you have any plan for your future?",
+"type": "response"
+},
+"43": {
+"character": "Oliver",
+"character_replacements": [  ],
+"next_id": "44",
+"replacements": [  ],
+"text": "......",
+"translation_key": "......",
+"type": "dialogue"
+},
+"44": {
+"character": "Oliver",
+"character_replacements": [  ],
+"next_id": "45",
+"replacements": [  ],
+"text": "Car...",
+"translation_key": "Car...",
+"type": "dialogue"
+},
+"45": {
+"next_id": "46",
+"next_id_after": "46",
+"replacements": [  ],
+"responses": PoolStringArray( "45" ),
+"text": "...",
+"translation_key": "...",
+"type": "response"
+},
+"46": {
+"character": "Oliver",
+"character_replacements": [  ],
+"next_id": "47",
+"replacements": [  ],
+"text": "Make Car......",
+"translation_key": "Make Car......",
+"type": "dialogue"
+},
+"47": {
+"next_id": "48",
+"next_id_after": "48",
+"replacements": [  ],
+"responses": PoolStringArray( "47" ),
+"text": "You will succeed Oliver. If you need any help,let me know.",
+"translation_key": "You will succeed Oliver. If you need any help,let me know.",
+"type": "response"
+},
+"48": {
+"character": "Oliver",
+"character_replacements": [  ],
+"next_id": "49",
+"replacements": [  ],
+"text": "......",
+"translation_key": "......",
+"type": "dialogue"
+},
+"49": {
+"next_id": "50",
+"next_id_after": "50",
+"replacements": [  ],
+"responses": PoolStringArray( "49" ),
+"text": "anytime, just let me know.",
+"translation_key": "anytime, just let me know.",
+"type": "response"
+},
+"5": {
+"character": "Emma",
+"character_replacements": [  ],
+"next_id": "6",
+"replacements": [  ],
+"text": "Future? En...",
+"translation_key": "Future? En...",
+"type": "dialogue"
+},
+"50": {
+"character": "Oliver",
+"character_replacements": [  ],
+"next_id": "51",
+"replacements": [  ],
+"text": "Mushroom...",
+"translation_key": "Mushroom...",
+"type": "dialogue"
+},
+"51": {
+"next_id": "52",
+"next_id_after": "52",
+"replacements": [  ],
+"responses": PoolStringArray( "51" ),
+"text": "Ok! I will found that!",
+"translation_key": "Ok! I will found that!",
+"type": "response"
+},
+"52": {
+"character": "Oliver",
+"character_replacements": [  ],
+"next_id": "53",
+"replacements": [  ],
+"text": "Carte",
+"translation_key": "Carte",
+"type": "dialogue"
+},
+"53": {
+"next_id": "54",
+"next_id_after": "54",
+"replacements": [  ],
+"responses": PoolStringArray( "53" ),
+"text": "?",
+"translation_key": "?",
+"type": "response"
+},
+"54": {
+"character": "Oliver",
+"character_replacements": [  ],
+"next_id": "55",
+"replacements": [  ],
+"text": "Safe journey",
+"translation_key": "Safe journey",
+"type": "dialogue"
+},
+"55": {
+"character": "",
+"next_id": "56",
+"replacements": [  ],
+"text": "-Of course!",
+"translation_key": "-Of course!",
+"type": "dialogue"
+},
+"56": {
+"mutation": {
+"expression": [ {
+"function": "emit",
+"type": "function",
+"value": [ [ {
+"type": "string",
+"value": "addSeasonalTask"
+} ], [ {
+"type": "string",
+"value": "Oliver"
+} ] ]
+} ]
+},
+"next_id": "57",
+"type": "mutation"
+},
+"57": {
+"next_id": "end",
+"type": "goto"
+},
+"58": {
+"next_id": "59",
+"text": "finish",
+"type": "title"
+},
+"59": {
+"character": "",
+"next_id": "60",
+"replacements": [  ],
+"text": "See you next time [next=auto]",
+"translation_key": "See you next time [next=auto]",
+"type": "dialogue"
+},
+"6": {
+"character": "Emma",
+"character_replacements": [  ],
+"next_id": "7",
+"replacements": [  ],
+"text": "Maybe I can become a teacher, just like EVA!",
+"translation_key": "Maybe I can become a teacher, just like EVA!",
+"type": "dialogue"
+},
+"60": {
+"next_id": "end",
+"type": "goto"
+},
+"62": {
+"next_id": "63",
+"text": "abort",
+"type": "title"
+},
+"63": {
+"next_id": "end",
+"type": "goto"
+},
+"7": {
+"character": "Emma",
+"character_replacements": [  ],
+"next_id": "8",
+"replacements": [  ],
+"text": "But, the most important thing is that we all together.",
+"translation_key": "But, the most important thing is that we all together.",
+"type": "dialogue"
+},
+"8": {
+"next_id": "9",
+"next_id_after": "9",
+"replacements": [  ],
+"responses": PoolStringArray( "8" ),
+"text": "A teacher, Great idea. If you need any help,let me know",
+"translation_key": "A teacher, Great idea. If you need any help,let me know",
+"type": "response"
+},
+"9": {
+"character": "Emma",
+"character_replacements": [  ],
+"next_id": "10",
+"replacements": [  ],
+"text": "Just right now!",
+"translation_key": "Just right now!",
+"type": "dialogue"
+}
+}

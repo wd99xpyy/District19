@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Modern_Exteriors_Characters_Scout_32x32_6.png-105be1adbdd6cb32bf0c5b321b2161c6.stex"
+path="res://.import/Lucas.png-5ebacc372ab08476e35d54018e33067f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://import/Modern_Exteriors_Characters_Scout_32x32_6.png"
-dest_files=[ "res://.import/Modern_Exteriors_Characters_Scout_32x32_6.png-105be1adbdd6cb32bf0c5b321b2161c6.stex" ]
+source_file="res://import/Lucas.png"
+dest_files=[ "res://.import/Lucas.png-5ebacc372ab08476e35d54018e33067f.stex" ]
 
 [params]
 

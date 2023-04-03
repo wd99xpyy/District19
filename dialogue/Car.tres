@@ -1,0 +1,149 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogue_manager/dialogue_resource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+resource_version = 4
+syntax_version = 2
+raw_text = "~ bushere
+Bus: Where you want to go?
+- Forest => Forest
+- City => City
+- No => END
+Nathan: For more information about conditional dialogue, mutations, and all the fun stuff, see the online documentation.
+
+~ Forest
+do emit(\"ToForest\")
+
+~ City
+do emit(\"ToCity\")
+
+~ finish
+See you next time [next=auto]
+=> END
+
+~ abort
+=> END"
+errors = [  ]
+titles = {
+"City": "11",
+"Forest": "8",
+"abort": "18",
+"bushere": "1",
+"finish": "14"
+}
+lines = {
+"0": {
+"next_id": "1",
+"text": "bushere",
+"type": "title"
+},
+"1": {
+"character": "Bus",
+"character_replacements": [  ],
+"next_id": "2",
+"replacements": [  ],
+"text": "Where you want to go?",
+"translation_key": "Where you want to go?",
+"type": "dialogue"
+},
+"10": {
+"next_id": "11",
+"text": "City",
+"type": "title"
+},
+"11": {
+"mutation": {
+"expression": [ {
+"function": "emit",
+"type": "function",
+"value": [ [ {
+"type": "string",
+"value": "ToCity"
+} ] ]
+} ]
+},
+"next_id": "",
+"type": "mutation"
+},
+"13": {
+"next_id": "14",
+"text": "finish",
+"type": "title"
+},
+"14": {
+"character": "",
+"next_id": "15",
+"replacements": [  ],
+"text": "See you next time [next=auto]",
+"translation_key": "See you next time [next=auto]",
+"type": "dialogue"
+},
+"15": {
+"next_id": "end",
+"type": "goto"
+},
+"17": {
+"next_id": "18",
+"text": "abort",
+"type": "title"
+},
+"18": {
+"next_id": "end",
+"type": "goto"
+},
+"2": {
+"next_id": "8",
+"next_id_after": "5",
+"replacements": [  ],
+"responses": PoolStringArray( "2", "3", "4" ),
+"text": "Forest",
+"translation_key": "Forest",
+"type": "response"
+},
+"3": {
+"next_id": "11",
+"next_id_after": "5",
+"replacements": [  ],
+"text": "City",
+"translation_key": "City",
+"type": "response"
+},
+"4": {
+"next_id": "end",
+"next_id_after": "5",
+"replacements": [  ],
+"text": "No",
+"translation_key": "No",
+"type": "response"
+},
+"5": {
+"character": "Nathan",
+"character_replacements": [  ],
+"next_id": "",
+"replacements": [  ],
+"text": "For more information about conditional dialogue, mutations, and all the fun stuff, see the online documentation.",
+"translation_key": "For more information about conditional dialogue, mutations, and all the fun stuff, see the online documentation.",
+"type": "dialogue"
+},
+"7": {
+"next_id": "8",
+"text": "Forest",
+"type": "title"
+},
+"8": {
+"mutation": {
+"expression": [ {
+"function": "emit",
+"type": "function",
+"value": [ [ {
+"type": "string",
+"value": "ToForest"
+} ] ]
+} ]
+},
+"next_id": "",
+"type": "mutation"
+}
+}
