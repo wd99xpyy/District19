@@ -9,7 +9,7 @@ onready var task = preload("res://object/Task.tscn")
 func _ready():
 	Global.connect("SeasonBegin",self,"addTaskSeasonBegin")
 	Global.connect("addSeasonalTask", self, "addSeasonalTask")
-	Global.connect("nextSeason",self,"addSeasonalTask")
+	Global.connect("nextSeason",self,"addTaskSeasonBegin")
 
 func removeTask(index):
 	#$TextureRect.get_child(index).queue_free()
@@ -21,8 +21,10 @@ func removeTask(index):
 		i += 1
 
 func addTaskSeasonBegin():
+	print("new Season")
+	Global.resetTask()
 	for i in $TextureRect.get_child_count():
-		removeTask(i)
+		removeTask(0)
 	addTask("Talk with Emma", "EVA")
 	addTask("Talk with Jackson", "EVA")
 	addTask("Talk with Lucas", "EVA")

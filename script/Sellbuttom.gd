@@ -18,6 +18,7 @@ func _on_Button_pressed():
 	else:
 		Global.collectedNum[checkA()] -= 1
 		Global.coin += price
+		Global.collectInvetory()
 		
 
 func checkA():

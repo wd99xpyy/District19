@@ -10,6 +10,8 @@ var currentlyPlayer
 func _ready():
 	currentlyPlayer = $Player/Player1
 	currentlyPlayer.active()
+	
+	# Stupid way to load the correct task list when reload the scene
 	if Global.timeH <1:
 		#$CanvasLayer/TaskList/TextureRect/Task.queue_free()
 		$NPC/EVA.convo = null

@@ -18,3 +18,15 @@ func _on_Button_pressed():
 	#get_tree().change_scene("res://scene/District19.tscn")
 func loadToDistrict():
 	get_tree().change_scene("res://scene/District19.tscn")
+
+
+func _on_Button2_pressed():
+	$credit.show()
+
+
+func _on_ColorRect_mouse_entered():
+	$Node2D.position = Vector2(0,75)
+
+
+func _on_ColorRect_mouse_exited():
+	$Node2D.position = Vector2(0,-104)

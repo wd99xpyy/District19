@@ -76,7 +76,7 @@ func _on_PlayerSprites_animation_finished():
 		attack = false
 	if sprite.animation == "die":
 		queue_free()
-		get_tree().change_scene("res://scene/District19.tscn")
+		get_tree().change_scene("res://scene/end.tscn")
 	if sprite.animation == "getHit":
 		beAttack = false
 		attack = false

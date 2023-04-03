@@ -27,6 +27,8 @@ var LucasTask = ""
 var LucasTasknum = 0
 var OliverTask = ""
 var OliverTasknum = 0
+
+#reset the value of global
 func resetGlobal():
 	coin = 0
 	invetory = []
@@ -38,6 +40,7 @@ func resetGlobal():
 	timeM = 0
 	timeS = 0
 	resetTask()
+#reset task 
 func resetTask():
 	EmmaTask = ""
 	EmmaTasknum = 0
@@ -47,6 +50,7 @@ func resetTask():
 	LucasTasknum = 0
 	OliverTask = ""
 	OliverTasknum = 0
+#set task 
 func setTask(character,TaskMushroom,Mushroomnum):
 	if character == "Emma":
 		EmmaTask = itemName[TaskMushroom]
@@ -60,10 +64,9 @@ func setTask(character,TaskMushroom,Mushroomnum):
 	if character == "Oliver":
 		OliverTask = itemName[TaskMushroom]
 		OliverTasknum = Mushroomnum	
-		
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+
+
+#to refresh item in inventory and store that
 func collectInvetory():
 	for item in invetory:
 		var itemisCollect = false
@@ -81,8 +84,8 @@ func collectInvetory():
 	var pos = 0
 	for i in collectedNum:
 		if i <=0:
-			collectedNum.remove_at(pos)
-			collectedInvetory.remove_at(pos)
+			collectedNum.remove(pos)
+			collectedInvetory.remove(pos)
 		else:
 			pos +=1
 			

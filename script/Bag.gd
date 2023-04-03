@@ -1,16 +1,12 @@
 extends Node2D
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass 
 
 func _physics_process(_delta):
+	#open and close
 	if Input.is_action_just_pressed("openBag"):
 		if $".".visible == true:
 			$".".visible = false
@@ -19,7 +15,7 @@ func _physics_process(_delta):
 			$".".visible = true
 		
 
-
+#set the item to the bags slot
 func refreshBag():
 	$TextureRect/Label.text = String(Global.coin)
 	Global.collectInvetory()
@@ -32,6 +28,3 @@ func refreshBag():
 			child.resetSlot()
 			i += 1
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass

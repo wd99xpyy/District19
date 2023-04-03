@@ -15,7 +15,7 @@ func _physics_process(_delta):
 		if isPlayerHere:
 			print("pickup")
 			Global.invetory.push_back("White Mushroom")
-			print(Global.invetory)
+			Global.collectInvetory()
 			queue_free()
 
 func _on_Area2D_body_entered(body):

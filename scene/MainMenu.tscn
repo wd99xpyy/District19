@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://import/planet-kosmos/PLANK___.TTF" type="DynamicFontData" id=1]
 [ext_resource path="res://import/background/_PNG/3/5.png" type="Texture" id=2]
@@ -6,12 +6,34 @@
 [ext_resource path="res://import/background/_PNG/3/4.png" type="Texture" id=4]
 [ext_resource path="res://script/MainMenu.gd" type="Script" id=5]
 [ext_resource path="res://object/Button.tscn" type="PackedScene" id=6]
+[ext_resource path="res://addons/dialogue_manager/example_balloon/Open_Sans/OpenSans-Regular.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://script/credit.gd" type="Script" id=8]
+[ext_resource path="res://import/RedBlack copy/03_IconClose (3)RedBlack.png" type="Texture" id=9]
+[ext_resource path="res://addons/dialogue_manager/example_balloon/Open_Sans/OpenSans-Italic.ttf" type="DynamicFontData" id=10]
+[ext_resource path="res://addons/dialogue_manager/example_balloon/Open_Sans/OpenSans-Bold.ttf" type="DynamicFontData" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 size = 130
 outline_size = 10
 outline_color = Color( 0.4, 0, 0, 1 )
 font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+extra_spacing_bottom = 12
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 10 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 37
+outline_size = 8
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 11 )
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource( 5 )
@@ -65,6 +87,120 @@ margin_left = 558.0
 margin_top = 442.0
 margin_right = 824.0
 margin_bottom = 513.0
-buttontext = "Credic"
+buttontext = "Credit"
+
+[node name="credit" type="Node2D" parent="."]
+visible = false
+script = ExtResource( 8 )
+
+[node name="TextureRect5" type="ColorRect" parent="credit"]
+margin_right = 1025.0
+margin_bottom = 600.0
+color = Color( 0.101961, 0.133333, 0.203922, 1 )
+
+[node name="TextureRect6" type="TextureRect" parent="credit"]
+margin_right = 1021.0
+margin_bottom = 600.0
+texture = ExtResource( 3 )
+expand = true
+
+[node name="TextureRect7" type="TextureRect" parent="credit"]
+margin_right = 1025.0
+margin_bottom = 602.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="TextureRect8" type="TextureRect" parent="credit"]
+margin_right = 1021.0
+margin_bottom = 603.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="ColorRect" type="ColorRect" parent="credit"]
+margin_left = 102.0
+margin_top = 107.0
+margin_right = 934.0
+margin_bottom = 589.0
+color = Color( 1, 1, 1, 0.768627 )
+
+[node name="Label2" type="Label" parent="credit"]
+margin_left = -14.0
+margin_top = -49.0
+margin_right = 1013.0
+margin_bottom = 256.0
+custom_fonts/font = SubResource( 1 )
+text = "district 19
+"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+uppercase = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="credit"]
+margin_left = 179.0
+margin_top = 183.0
+margin_right = 872.0
+margin_bottom = 554.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 2 )
+text = "font: https://www.1001freefonts.com/monterey.font
+https://www.1001freefonts.com/planet-kosmos.font 
+coin: https://craftpix.net/product/treasure-shop-asset-set/
+mushroom: https://craftpix.net/product/mushroom-rpg-icon-collection/
+Map&Character: https://limezu.itch.io/modernexteriors
+Map: https://craftpix.net/freebies/free-cartoon-forest-game-backgrounds/
+Player: https://craftpix.net/product/game-character-for-2d-platformer/
+Enemy: https://craftpix.net/product/robot-v3-enemy-character-sprites/
+UI: https://wenrexa.itch.io/uilight"
+scroll_following = true
+
+[node name="Button" type="Button" parent="credit"]
+margin_left = 832.0
+margin_top = 149.0
+margin_right = 907.0
+margin_bottom = 218.0
+icon = ExtResource( 9 )
+flat = true
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2( 0, -94 )
+
+[node name="ColorRect" type="ColorRect" parent="Node2D"]
+margin_top = -73.0
+margin_right = 1025.0
+margin_bottom = 169.0
+color = Color( 1, 1, 1, 0.709804 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Node2D"]
+margin_left = 8.0
+margin_top = -19.0
+margin_right = 1068.0
+margin_bottom = 74.0
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_fonts/normal_font = SubResource( 3 )
+text = "Top view:        WASD to move        Shift+WASD to run        C to view character info        CAPSLOCK or Q to switch scene        T to open Trading page        B to open Bag        Task on the leftside
+Horizontal:        AD to walk         Shift+AD to run        Space to jump        E to attack        F to pickup mushroom"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Controls" type="Label" parent="Node2D"]
+margin_left = 451.0
+margin_top = 100.0
+margin_right = 607.0
+margin_bottom = 151.0
+custom_fonts/font = SubResource( 4 )
+text = "Controls"
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="credit/Button" to="credit" method="_on_Button_pressed"]
+[connection signal="mouse_entered" from="Node2D/ColorRect" to="." method="_on_ColorRect_mouse_entered"]
+[connection signal="mouse_exited" from="Node2D/ColorRect" to="." method="_on_ColorRect_mouse_exited"]

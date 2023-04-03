@@ -12,6 +12,7 @@ export(String) var NPCName
 func _ready():
 	Global.connect("TaskNPCTalk",self,"setDialogue")
 	Global.connect("addSeasonalTask",self,"unsetDialogue")
+	Global.connect("nextSeason",self,"setDialogue")
 	if NPCName == "EVA":
 		if dialogue != null:
 			convo = load(dialogue)
